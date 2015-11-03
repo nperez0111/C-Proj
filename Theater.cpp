@@ -15,6 +15,9 @@ void displaySeats(int [][cols]);
 void displaySeatPrices(double (&array) prices);
 //displays prices by row 
 
+void confirm();
+//calls menu again if user presses enter after couting Press the Enter key to continue;
+
 int main(){
 	
 	double theaterSeats[rows][cols];
