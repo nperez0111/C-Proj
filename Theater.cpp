@@ -5,6 +5,9 @@ void enterSeatPrices(int &[]);
 void menu();
 //menu caller
 
+void displaySeats(int [][cols]);
+//display Seats
+
 int main(){
 	
 	system("PAUSE");
