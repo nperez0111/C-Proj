@@ -16,11 +16,15 @@ void displaySeatPrices(double []);
 //displays prices by row 
 void confirm();
 //calls menu again if user presses enter after couting Press the Enter key to continue;
-
+void juan();
+void nick();
+void nalin();
 
 int main(){
-	menu();
-	
+	//menu();
+	juan();
+	nalin();
+	nick();
 	
 	system("PAUSE");
 	return 0;
@@ -91,5 +95,14 @@ void displaySeatPrices(double price[]){
 		cout<<"\t"<<i+1<<"\t"<<price[i]<<endl;
 	}
 	
+	
+}
+void nick(){
+
+}
+void nalin(){
+	
+}
+void juan(){
 	
 }
