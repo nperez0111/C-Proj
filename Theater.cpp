@@ -29,6 +29,12 @@ int main(){
 	return 0;
 }
 
+void confirm(){
+	string nothing;
+	cout<<"Please enter to continue";
+	cin>>nothing;
+	menu();
+}
 
 void enterSeatPrices(double (&array)[rows]) //Function done by Nalin Suri
 {
