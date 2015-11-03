@@ -90,9 +90,10 @@ void enterSeatPrices(double (&array)[rows])
 
 void displaySeatPrices(double price[]){
 	cout<<"Ticket Prices by Row \n";
-	for(int i=0;i<16;i++){
-		cout<<"\tRow\t"<<"Price \n";
-		cout<<"\t---\t"<<"---- \n";
+	cout<<"\tRow\t"<<"Price \n";
+	cout<<"\t---\t"<<"---- \n";
+	for(int i=0;i<15;i++){
+	
 		cout<<"\t"<<i+1<<"\t"<<price[i]<<endl;
 	}
 	
@@ -107,5 +108,7 @@ void nalin(){
 	
 }
 void juan(){
-	
+	double arr[15]{1,2,3,4,1,2,3,4,1,2,3,4,1,2};
+
+ displaySeatPrices(arr);	
 }
