@@ -1,12 +1,29 @@
 #include <iostream>
 using namespace std;
-// void enterSeatPrices(int &[]);
+
+const int rows= 15;
+const int cols= 30;
+
+void enterSeatPrices(double (&array)[]);
+
 //first function to be called, asks users for price of each row
 void menu();
 //menu caller
 
+void displaySeats(int [][cols]);
+//display Seats
+
+void displaySeatPrices(double (&array)[]);
+//displays prices by row 
+
+void confirm();
+//calls menu again if user presses enter after couting Press the Enter key to continue;
+
+>>>>>>> origin/master
 int main(){
 	menu();
+	
+	enterSeatPrices(theaterSeats[]);
 	
 	system("PAUSE");
 	return 0;
@@ -49,4 +66,19 @@ switch(choice){
 	break;
 			}
 } while(booll);
+void confirm(){
+	string nothing;
+	cout<<"Please enter to continue";
+	cin>>nothing;
+	menu();
+}
+
+void enterSeatPrices(double (&array)[rows]) //Function done by Nalin Suri
+{
+	for (int count=0;count<rows; count++)
+	{
+		cout<< "Please enter ticket price for Row"<< setw(2) << rows+1;
+		cin>> array[rows];
+	}
+	
 }
