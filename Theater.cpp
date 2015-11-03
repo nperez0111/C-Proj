@@ -12,11 +12,12 @@ void menu();
 void displaySeats(int [][cols]);
 //display Seats
 
-void displaySeatPrices(double (&array) prices);
+void displaySeatPrices(double []);
 //displays prices by row 
 
 void confirm();
 //calls menu again if user presses enter after couting Press the Enter key to continue;
+
 
 int main(){
 	
@@ -29,6 +30,17 @@ int main(){
 
 void enterSeatPrices(double (&array)[rows])
 {
+	
+	
+}
+
+void displaySeatPrices(double []){
+	cout>>"Ticket Prices by Row \n";
+	for(int i=0;i<16;i++){
+		cout<<"\tRow\t"<<"Price \n";
+		cout<<"\t---\t"<<"---- \n";
+		cout<<"\t"
+	}
 	
 	
 }
