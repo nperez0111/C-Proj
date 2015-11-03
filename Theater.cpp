@@ -12,7 +12,6 @@ int main(){
 	return 0;
 }
 
-
 void menu(){
 int choice;
 cout << "\n\n\n\t\tC++ Theatre" << endl << endl;
