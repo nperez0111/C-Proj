@@ -83,12 +83,12 @@ void enterSeatPrices(double (&array)[rows]) //Function done by Nalin Suri
 	
 }
 
-void displaySeatPrices(double []){
+void displaySeatPrices(double price[]){
 	cout>>"Ticket Prices by Row \n";
 	for(int i=0;i<16;i++){
 		cout<<"\tRow\t"<<"Price \n";
 		cout<<"\t---\t"<<"---- \n";
-		cout<<"\t"
+		cout<<"\t"<<i+1<<"\t"<<price[i]<<endl;
 	}
 	
 	
