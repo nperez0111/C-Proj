@@ -19,7 +19,6 @@ void displaySeatPrices(double (&array)[]);
 void confirm();
 //calls menu again if user presses enter after couting Press the Enter key to continue;
 
->>>>>>> origin/master
 int main(){
 	menu();
 	
