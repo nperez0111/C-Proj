@@ -12,6 +12,9 @@ void menu();
 void displaySeats(int [][cols]);
 //display Seats
 
+void displaySeatPrices(double (&array) prices);
+//displays prices by row 
+
 int main(){
 	
 	double theaterSeats[rows][cols];
