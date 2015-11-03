@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
-void enterSeatPrices(int &[]);
+
+const int rows= 15;
+const int cols= 30;
+
+void enterSeatPrices(double (&array)[rows]);
 //first function to be called, asks users for price of each row
 void menu();
 //menu caller
@@ -10,6 +14,15 @@ void displaySeats(int [][cols]);
 
 int main(){
 	
+	double theaterSeats[rows][cols];
+	
 	system("PAUSE");
 	return 0;
+}
+
+
+void enterSeatPrices(double (&array)[rows])
+{
+	
+	
 }
