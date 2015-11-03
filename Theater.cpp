@@ -5,7 +5,7 @@ using namespace std;
 const int rows= 15;
 const int cols= 30;
 
-void enterSeatPrices(double (&array)[rows]);
+void enterSeatPrices(double (&array)[]);
 //first function to be called, asks users for price of each row
 void menu();
 //menu caller
@@ -13,7 +13,7 @@ void menu();
 void displaySeats(int [][cols]);
 //display Seats
 
-void displaySeatPrices(double (&array) prices);
+void displaySeatPrices(double (&array)[]);
 //displays prices by row 
 
 void confirm();
@@ -22,6 +22,8 @@ void confirm();
 int main(){
 	
 	double theaterSeats[rows][cols];
+	
+	enterSeatPrices(theaterSeats[]);
 	
 	system("PAUSE");
 	return 0;
