@@ -21,6 +21,7 @@ void nick();
 void nalin();
 
 int main(){
+	
 	//menu();
 	juan();
 	nalin();
@@ -81,8 +82,8 @@ void enterSeatPrices(double (&array)[rows])
 {
 	for (int count=0;count<rows; count++)
 	{
-		cout<< "Please enter ticket price for Row"<< setw(2) << rows+1;
-		cin>> array[rows];
+		cout<< "Please enter ticket price for Row"<< setw(2) << count+1<< " ";
+		cin>> array[count];
 	}
 	
 }
@@ -101,6 +102,8 @@ void nick(){
 
 }
 void nalin(){
+	double seats[rows];
+	enterSeatPrices(seats);
 	
 }
 void juan(){
