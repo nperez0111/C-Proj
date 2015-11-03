@@ -1,10 +1,11 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 const int rows= 15;
 const int cols= 30;
 
-void enterSeatPrices(double (&array)[]);
+void enterSeatPrices(double (&array)[rows]);
 
 //first function to be called, asks users for price of each row
 void menu();
@@ -64,7 +65,7 @@ switch(choice){
 	booll=true;
 	break;
 			}
-} while(booll);
+} while(booll);}
 void confirm(){
 	string nothing;
 	cout<<"Please enter to continue";
