@@ -5,18 +5,15 @@ using namespace std;
 const int rows= 15;
 const int cols= 30;
 
+//Function Prototypes done by Nick Perez and Nalin Suri
 void enterSeatPrices(double (&array)[rows]);
-
 //first function to be called, asks users for price of each row
 void menu();
 //menu caller
-
 void displaySeats(int [][cols]);
 //display Seats
-
 void displaySeatPrices(double []);
 //displays prices by row 
-
 void confirm();
 //calls menu again if user presses enter after couting Press the Enter key to continue;
 
@@ -29,6 +26,8 @@ int main(){
 	return 0;
 }
 
+
+//Menu done by Juan Herrera
 void menu(){
 int choice;
 cout << "\n\n\n\t\tC++ Theatre" << endl << endl;
@@ -73,7 +72,8 @@ void confirm(){
 	menu();
 }
 
-void enterSeatPrices(double (&array)[rows]) //Function done by Nalin Suri
+//Function done by Nalin Suri
+void enterSeatPrices(double (&array)[rows]) 
 {
 	for (int count=0;count<rows; count++)
 	{
