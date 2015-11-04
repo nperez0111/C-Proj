@@ -16,6 +16,11 @@ void displaySeatPrices(double []);
 //displays prices by row 
 void confirm();
 //calls menu again if user presses enter after couting Press the Enter key to continue;
+void viewTicketSales(double prices[],bool seats[][cols]);
+//goes through seats array and if it is true add its price by its row to an accumulator
+//example pseduocode for(){for(){if(seats[row][col]){total+=prices[row]}}}
+//after call the main function immediately
+
 void juan();
 void nick();
 void nalin();
