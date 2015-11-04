@@ -9,7 +9,7 @@ const int cols= 30;
 void enterSeatPrices(double (&array)[rows]);
 //first function to be called, asks users for price of each row
 void menu();
-//menu caller
+//menu caller function to display menu and selection
 void displaySeats(bool [][cols]);
 //display Seats will display the seats the user has purchased or not passed a multi dimensional array where true means the seat is sold and false means the seat is available
 void displaySeatPrices(double []);
@@ -17,10 +17,31 @@ void displaySeatPrices(double []);
 void confirm();
 //calls menu again if user presses enter after couting Press the Enter key to continue;
 void viewTicketSales(double prices[],bool seats[][cols]);
-//goes through seats array and if it is true add its price by its row to an accumulator
-//example pseduocode for(){for(){if(seats[row][col]){total+=prices[row]}}}
-//after call the main function immediately
+/*
+goes through seats array and if it is true add its price by its row to an accumulator
+example pseudocode:
+for(){
+	for(){
+		if(seats[row][col]){
+		total+=prices[row]
+		}
+	}
+}
+after call the main function immediately
+*/
+void purchaseTicket(bool (&seats)[][cols]);
+/*asks user whether to view available seats or not 
+if(y){displaySeats();confirm();} 
+do{
+flag=false;
+	asks user for row to purchase
+	asks user for seat num to purchase
+	set that seat to be purchased
+	ask user if they'd like to purchase another seat
+	if(y){flag=true;} 
+}while(flag);
 
+*/
 void juan();
 void nick();
 void nalin();
