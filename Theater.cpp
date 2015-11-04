@@ -29,7 +29,7 @@ for(){
 }
 after call the main function immediately
 */
-void purchaseTicket(bool (&seats)[][cols]);
+void purchaseTicket(bool (&seats)[rows][cols]);
 /*asks user whether to view available seats or not 
 if(y){displaySeats();confirm();} 
 do{
