@@ -10,8 +10,8 @@ void enterSeatPrices(double (&array)[rows]);
 //first function to be called, asks users for price of each row
 void menu();
 //menu caller
-void displaySeats(int [][cols]);
-//display Seats
+void displaySeats(bool [][cols]);
+//display Seats will display the seats the user has purchased or not passed a multi dimensional array where true means the seat is sold and false means the seat is available
 void displaySeatPrices(double []);
 //displays prices by row 
 void confirm();
