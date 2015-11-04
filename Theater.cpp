@@ -134,7 +134,7 @@ void nalin(){
 	
 }
 void juan(){
-	double arr[15]{1,2,3,4,1,2,3,4,1,2,3,4,1,2};
+	double arr[15]={1,2,3,4,1,2,3,4,1,2,3,4,1,2};
 
  displaySeatPrices(arr);	
 }
