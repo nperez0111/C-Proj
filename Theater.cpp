@@ -4,10 +4,12 @@ using namespace std;
 
 const int rows= 15;
 const int cols= 30;
+double seatPrices[rows];
+
 
 //Function Prototypes/Organizational Logic by Nick Perez
 
-void enterSeatPrices(double (&array)[rows]);
+void enterSeatPrices();
 //first function to be called, asks users for price of each row
 //Implemented by Nalin Suri
 
@@ -61,9 +63,9 @@ void nalin();
 
 int main(){
 	
+
 	//Functions Implemented by Nalin Suri
-	double seats[rows];
-	enterSeatPrices(seats);
+	enterSeatPrices();
 	menu();
 	
 	//menu();
@@ -118,16 +120,15 @@ void confirm(){
 	string nothing;
 	cout<<"Please enter to continue";
 	cin>>nothing;
-	menu();
 }
 
 //Function implemented by Nalin Suri
-void enterSeatPrices(double (&array)[rows]) 
+void enterSeatPrices() 
 {
 	for (int count=0;count<rows; count++)
 	{
 		cout<< "Please enter ticket price for Row"<< setw(2) << count+1<< " ";
-		cin>> array[count];
+		cin>> seatPrices[count];
 	}
 	
 }
