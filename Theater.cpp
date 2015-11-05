@@ -2,6 +2,8 @@
 #include <iomanip>
 using namespace std;
 
+
+//Variables by Nalin Suri
 const int rows= 15;
 const int cols= 30;
 double seatPrices[rows];
@@ -11,24 +13,24 @@ bool availableSeats[rows][cols];
 //Function Prototypes/Organizational Logic by Nick Perez
 
 void enterSeatPrices();
-//first function to be called, asks users for price of each row
-//Implemented by Nalin Suri
+//first function to be called, asks users for price of each row (using loop)
+//Created by Nalin Suri
 
 void menu();
 //menu caller function to display menu and selection
-//implemented by Juan Herrera
+//Created by Juan Herrera
 
 void displaySeats();
 //display Seats will display the seats the user has purchased or not passed a multi dimensional array where true means the seat is sold and false means the seat is available
-//Pseudocode by Nick Perez
+//Created by Nalin Suri
 
 void displaySeatPrices(double []);
 //Displays prices by row
-//Implemented by Juan Herrera
+//Created by Juan Herrera
 
 void confirm();
 //calls menu again if user presses enter after couting Press the Enter key to continue;
-//Pseudocode/Implementation by Nick Perez
+//Created by Nick Perez
 
 void viewTicketSales(double prices[],bool seats[][cols]);
 
@@ -44,8 +46,9 @@ for(){
 	}
 }
 after call the main function immediately
-Pseudocode by Nick Perez
+Function/Pseudocode created by Nick Perez
 */
+
 void purchaseTicket(bool (&seats)[rows][cols]);
 /*asks user whether to view available seats or not 
 if(y){displaySeats();confirm();} 
@@ -57,13 +60,9 @@ flag=false;
 	ask user if they'd like to purchase another seat
 	if(y){flag=true;} 
 }while(flag);
-
 Pseudocode by Nick Perez
 */
 
-void juan();
-void nick();
-void nalin();
 
 int main(){
 
@@ -77,8 +76,9 @@ int main(){
 }
 
 
-//Menu implemented by Juan Herrera
-void menu(){
+
+void menu() //Juan Herrera
+{
 int choice;
 cout << "\n\n\n\t\tC++ Theatre" << endl << endl;
 cout << "\n\t1. View Available Seats";
@@ -121,8 +121,8 @@ void confirm(){
 	cin>>nothing;
 }
 
-//Function implemented by Nalin Suri
-void enterSeatPrices() 
+
+void enterSeatPrices() //Nalin Suri
 {
 	for (int count=0;count<rows; count++)
 	{
@@ -132,7 +132,7 @@ void enterSeatPrices()
 	
 }
 
-void displaySeats()
+void displaySeats() //Nalin Suri
 {
 	cout << "\n\t\tSeats";
 	cout << "\n\t123456789012345678901234567890" << endl;
@@ -162,8 +162,8 @@ void displaySeats()
 	
 }
 
-//Function implemented by Juan Herrera
-void displaySeatPrices(double price[]){
+void displaySeatPrices(double price[]) //Juan Herrera
+{
 	cout<<"\nTicket Prices by Row \n\n";
 	cout<<"\tRow\t"<<"Price \n";
 	cout<<"\t---\t"<<"---- \n";
@@ -175,8 +175,8 @@ void displaySeatPrices(double price[]){
 menu();
 }
 
-void viewTicketSales(double prices[],bool sets[][cols]){
-	//displaySeats(seats);
+void viewTicketSales(double prices[],bool seats[][cols]){
+	displaySeats(seats);
 
 	double total=0.0;
 	
@@ -192,9 +192,8 @@ void viewTicketSales(double prices[],bool sets[][cols]){
  
 }
 
-void nick(){
 
-}
+
 void nalin(){
 	
 }
