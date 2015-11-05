@@ -22,7 +22,7 @@ void displaySeats();
 //display Seats will display the seats the user has purchased or not passed a multi dimensional array where true means the seat is sold and false means the seat is available
 //Pseudocode by Nick Perez
 
-void displaySeatPrices(double []);
+void displaySeatPrices();
 //Displays prices by row
 //Implemented by Juan Herrera
 
@@ -30,7 +30,7 @@ void confirm();
 //calls menu again if user presses enter after couting Press the Enter key to continue;
 //Pseudocode/Implementation by Nick Perez
 
-void viewTicketSales(double prices[],bool seats[][cols]);
+void viewTicketSales();
 /*
 goes through seats array and if it is true add its price by its row to an accumulator
 example pseudocode:
@@ -44,7 +44,7 @@ for(){
 after call the main function immediately
 Pseudocode by Nick Perez
 */
-void purchaseTicket(bool (&seats)[rows][cols]);
+void purchaseTicket();
 /*asks user whether to view available seats or not 
 if(y){displaySeats();confirm();} 
 do{
@@ -96,16 +96,16 @@ do{
 	booll=false;
 switch(choice){
 	case 1:
-	cout<< "Case 1 \n";
+	displaySeats();
 	break;
 	case 2:
-	cout<<"Case 2 \n";
+	displaySeatPrices();
 	break;
 	case 3:
-	cout<< "Case 3 \n";
+	viewTicketSales();
 	break;
 	case 4:
-	cout<< "Case 4 \n";
+	purchaseTicket();
 	break;
 	case 5:
 	return;
@@ -143,7 +143,7 @@ void displaySeats()
 	{
 		if(availableSeats[rows][cols]==false)
 		{
-			
+		
 		}
 		else
 		{
@@ -151,6 +151,17 @@ void displaySeats()
 		}
 			
 	}
+	
+//	for()
+//	{
+//		for()
+//		{
+//			if(seats[row][col])
+//			{
+//			total+=prices[row]
+//			}
+//		}
+//	}
 	cout << "\n\n\n\tLegend:\t* = Sold";
 	cout << "\n\t\t# = Available";
 	cout << "\n\n\nPress the Enter key to continue.";
