@@ -5,6 +5,7 @@ using namespace std;
 const int rows= 15;
 const int cols= 30;
 double seatPrices[rows];
+bool availableSeats[rows][cols];
 
 
 //Function Prototypes/Organizational Logic by Nick Perez
