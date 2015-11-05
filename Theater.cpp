@@ -146,13 +146,7 @@ void viewTicketSales(double prices[],bool sets[][cols]){
 	//displaySeats(seats);
 
 	double total=0.0;
-	bool seats [row][cols];
-	for(int r=0;r<rows;r++){
-		for(int c=0;c<cols;c++){
-			seats[r][c]=(r%2==0);
-		}
-	}
-	double prices[15]={1,2,1,1,2,1,1,2,1,1,2,1,1,2,1}
+	
 	}
 	for(int r=0;r<rows;r++){
 		for(int c=0;c<cols;c++){
@@ -175,5 +169,12 @@ void nalin(){
 	
 }
 void juan(){
+bool seats [row][cols];
+	for(int r=0;r<rows;r++){
+		for(int c=0;c<cols;c++){
+			seats[r][c]=(r%2==0);
+		}
+	}
+	double prices[15]={1,2,1,1,2,1,1,2,1,1,2,1,1,2,1}
 	viewTicketSales(double prices[],bool seats[][cols]);
 }
