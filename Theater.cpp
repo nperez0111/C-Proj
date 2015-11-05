@@ -29,24 +29,7 @@ void confirm();
 
 void viewTicketSales(double prices[],bool seats[][cols]);
 
-void viewTicketSales(double prices[],bool seats[][cols]){
-	dispalySeats(seats);
 
-
-	for(seats){
-		for(prices){
-		if(seats[row][col]==true){
-		total+=prices[row]
-		}
-	}
-}
-	
-	
-	
-	
-	
-	
-}
 /*
 goes through seats array and if it is true add its price by its row to an accumulator
 example pseudocode:
@@ -159,6 +142,29 @@ void displaySeatPrices(double price[]){
 	
 }
 
+void viewTicketSales(double prices[],bool sets[][cols]){
+	//displaySeats(seats);
+
+	double total=0.0;
+	bool seats [row][cols];
+	for(int r=0;r<rows;r++){
+		for(int c=0;c<cols;c++){
+			seats[r][c]=(r%2==0);
+		}
+	}
+	double prices[15]={1,2,1,1,2,1,1,2,1,1,2,1,1,2,1}
+	}
+	for(int r=0;r<rows;r++){
+		for(int c=0;c<cols;c++){
+		if(seats[r][c]){
+		total+=prices[r]
+		}
+	}
+ }
+ cout>>"Total Sales to Date: $"<<total<<endl;
+ 
+}
+
 //Personal functions to not clash implementations
 void nick(){
 
@@ -169,7 +175,5 @@ void nalin(){
 	
 }
 void juan(){
-	double arr[15]={1,2,3,4,1,2,3,4,1,2,3,4,1,2,2};
-
- displaySeatPrices(arr);	
+	viewTicketSales(double prices[],bool seats[][cols]);
 }
