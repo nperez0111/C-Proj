@@ -5,17 +5,28 @@ using namespace std;
 const int rows= 15;
 const int cols= 30;
 
-//Function Prototypes done by Nick Perez and Nalin Suri
+//Function Prototypes/Organizational Logic by Nick Perez
+
 void enterSeatPrices(double (&array)[rows]);
 //first function to be called, asks users for price of each row
+//Implemented by Nalin Suri
+
 void menu();
 //menu caller function to display menu and selection
+//implemented by Juan Herrera
+
 void displaySeats(bool [][cols]);
 //display Seats will display the seats the user has purchased or not passed a multi dimensional array where true means the seat is sold and false means the seat is available
+//Pseudocode by Nick Perez
+
 void displaySeatPrices(double []);
-//displays prices by row 
+//Displays prices by row
+//Implemented by Juan Herrera
+
 void confirm();
 //calls menu again if user presses enter after couting Press the Enter key to continue;
+//Pseudocode/Implementation by Nick Perez
+
 void viewTicketSales(double prices[],bool seats[][cols]);
 /*
 goes through seats array and if it is true add its price by its row to an accumulator
@@ -28,6 +39,7 @@ for(){
 	}
 }
 after call the main function immediately
+Pseudocode by Nick Perez
 */
 void purchaseTicket(bool (&seats)[rows][cols]);
 /*asks user whether to view available seats or not 
@@ -41,6 +53,7 @@ flag=false;
 	if(y){flag=true;} 
 }while(flag);
 
+Pseudocode by Nick Perez
 */
 void juan();
 void nick();
@@ -58,7 +71,7 @@ int main(){
 }
 
 
-//Menu done by Juan Herrera
+//Menu implemented by Juan Herrera
 void menu(){
 int choice;
 cout << "\n\n\n\t\tC++ Theatre" << endl << endl;
@@ -103,7 +116,7 @@ void confirm(){
 	menu();
 }
 
-//Function done by Nalin Suri
+//Function implemented by Nalin Suri
 void enterSeatPrices(double (&array)[rows]) 
 {
 	for (int count=0;count<rows; count++)
@@ -114,6 +127,7 @@ void enterSeatPrices(double (&array)[rows])
 	
 }
 
+//Function implemented by Juan Herrera
 void displaySeatPrices(double price[]){
 	cout<<"Ticket Prices by Row \n";
 	cout<<"\tRow\t"<<"Price \n";
@@ -125,6 +139,8 @@ void displaySeatPrices(double price[]){
 	
 	
 }
+
+//Personal functions to not clash implementations
 void nick(){
 
 }
