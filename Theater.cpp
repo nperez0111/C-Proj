@@ -61,6 +61,9 @@ void nalin();
 
 int main(){
 	
+	double seats[rows];
+	enterSeatPrices(seats);
+	
 	//menu();
 	juan();
 	nalin();
@@ -145,8 +148,7 @@ void nick(){
 
 }
 void nalin(){
-	double seats[rows];
-	enterSeatPrices(seats);
+	
 	
 }
 void juan(){
