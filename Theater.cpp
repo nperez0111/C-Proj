@@ -139,6 +139,7 @@ void displaySeats()
 	cout << "\n\t\tSeats";
 	cout << "\n 123456789012345678901234567890" << endl;
 	//suggestion use a nested for loop to go through the array
+<<<<<<< HEAD
 	while(availableSeats[rows][cols])
 	{
 		if(availableSeats[rows][cols]==false)
@@ -167,6 +168,13 @@ void displaySeats()
 	cout << "\n\n\nPress the Enter key to continue.";
 	cin.ignore();
 	cin.get();
+=======
+	//cout << "\n\n\n\tLegend:\t* = Sold";
+	// cout << "\n\t\t# = Available";
+	// cout << "\n\n\nPress the Enter key to continue.";
+	// cin.ignore();
+	// cin.get();
+>>>>>>> parent of e6ea3ec... Worked on Display Seats Fn
 	
 }
 
