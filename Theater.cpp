@@ -120,8 +120,8 @@ void confirm(){
 	cin>>nothing;
 }
 
-//Function implemented by Nalin Suri
-void enterSeatPrices() 
+
+void enterSeatPrices() //Function by Nalin Suri
 {
 	for (int count=0;count<rows; count++)
 	{
@@ -131,7 +131,8 @@ void enterSeatPrices()
 	
 }
 
-void displaySeats()
+
+void displaySeats() //Function by Nalin Suri
 {
 	cout << "\n\t\tSeats";
 	cout << "\n\t123456789012345678901234567890" << endl;
@@ -161,8 +162,9 @@ void displaySeats()
 	
 }
 
-//Function implemented by Juan Herrera
-void displaySeatPrices(double price[]){
+
+void displaySeatPrices(double price[]) //Function by Juan Herrera
+{
 	cout<<"\nTicket Prices by Row \n\n";
 	cout<<"\tRow\t"<<"Price \n";
 	cout<<"\t---\t"<<"---- \n";
@@ -175,12 +177,3 @@ menu();
 }
 
 
-void nick(){
-
-}
-void nalin(){
-	
-}
-void juan(){
-	
-}
