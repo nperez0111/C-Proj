@@ -139,11 +139,23 @@ void displaySeats()
 	cout << "\n\t\tSeats";
 	cout << "\n 123456789012345678901234567890" << endl;
 	//suggestion use a nested for loop to go through the array
-	//cout << "\n\n\n\tLegend:\t* = Sold";
-	// cout << "\n\t\t# = Available";
-	// cout << "\n\n\nPress the Enter key to continue.";
-	// cin.ignore();
-	// cin.get();
+	while(availableSeats[rows][cols])
+	{
+		if(availableSeats[rows][cols]==false)
+		{
+			
+		}
+		else
+		{
+			
+		}
+			
+	}
+	cout << "\n\n\n\tLegend:\t* = Sold";
+	cout << "\n\t\t# = Available";
+	cout << "\n\n\nPress the Enter key to continue.";
+	cin.ignore();
+	cin.get();
 	
 }
 
