@@ -21,7 +21,17 @@ void menu();
 //Created by Juan Herrera
 
 void displaySeats();
-//display Seats will display the seats the user has purchased or not passed a multi dimensional array where true means the seat is sold and false means the seat is available
+//display Seats will display the seats the user has purchased or not passed a multi dimensional array
+//where true means the seat is sold and false means the seat is available
+//	for(int count=0;count<rows; count++)
+//	{
+//		for(int count1=0; count1<cols; count1++)
+//		{
+//			if(availableSeats is false)
+//				cout<<"#"; (Hashtag for seats available)
+//			else
+//				cout<<"*"; (Star for seats bought)
+//		}}
 //Created by Nalin Suri
 
 void displaySeatPrices(double []);
@@ -46,7 +56,7 @@ for(){
 	}
 }
 after call the main function immediately
-Function/Pseudocode created by Nick Perez
+Created by Nick Perez
 */
 
 void purchaseTicket(bool (&seats)[rows][cols]);
@@ -60,7 +70,7 @@ flag=false;
 	ask user if they'd like to purchase another seat
 	if(y){flag=true;} 
 }while(flag);
-Pseudocode by Nick Perez
+Created by Nick Perez
 */
 
 
