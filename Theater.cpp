@@ -22,7 +22,7 @@ void displaySeats();
 //display Seats will display the seats the user has purchased or not passed a multi dimensional array where true means the seat is sold and false means the seat is available
 //Pseudocode by Nick Perez
 
-void displaySeatPrices();
+void displaySeatPrices(double []);
 //Displays prices by row
 //Implemented by Juan Herrera
 
@@ -30,7 +30,7 @@ void confirm();
 //calls menu again if user presses enter after couting Press the Enter key to continue;
 //Pseudocode/Implementation by Nick Perez
 
-void viewTicketSales();
+void viewTicketSales(double prices[],bool seats[][cols]);
 /*
 goes through seats array and if it is true add its price by its row to an accumulator
 example pseudocode:
@@ -44,7 +44,7 @@ for(){
 after call the main function immediately
 Pseudocode by Nick Perez
 */
-void purchaseTicket();
+void purchaseTicket(bool (&seats)[rows][cols]);
 /*asks user whether to view available seats or not 
 if(y){displaySeats();confirm();} 
 do{
@@ -96,16 +96,16 @@ do{
 	booll=false;
 switch(choice){
 	case 1:
-	displaySeats();
+	cout<< "Case 1 \n";
 	break;
 	case 2:
-	displaySeatPrices();
+	cout<<"Case 2 \n";
 	break;
 	case 3:
-	viewTicketSales();
+	cout<< "Case 3 \n";
 	break;
 	case 4:
-	purchaseTicket();
+	cout<< "Case 4 \n";
 	break;
 	case 5:
 	return;
@@ -139,13 +139,11 @@ void displaySeats()
 	cout << "\n\t\tSeats";
 	cout << "\n 123456789012345678901234567890" << endl;
 	//suggestion use a nested for loop to go through the array
-<<<<<<< HEAD
-<<<<<<< HEAD
 	while(availableSeats[rows][cols])
 	{
 		if(availableSeats[rows][cols]==false)
 		{
-		
+			
 		}
 		else
 		{
@@ -153,34 +151,11 @@ void displaySeats()
 		}
 			
 	}
-	
-//	for()
-//	{
-//		for()
-//		{
-//			if(seats[row][col])
-//			{
-//			total+=prices[row]
-//			}
-//		}
-//	}
 	cout << "\n\n\n\tLegend:\t* = Sold";
 	cout << "\n\t\t# = Available";
 	cout << "\n\n\nPress the Enter key to continue.";
 	cin.ignore();
 	cin.get();
-=======
-=======
->>>>>>> parent of e6ea3ec... Worked on Display Seats Fn
-	//cout << "\n\n\n\tLegend:\t* = Sold";
-	// cout << "\n\t\t# = Available";
-	// cout << "\n\n\nPress the Enter key to continue.";
-	// cin.ignore();
-	// cin.get();
-<<<<<<< HEAD
->>>>>>> parent of e6ea3ec... Worked on Display Seats Fn
-=======
->>>>>>> parent of e6ea3ec... Worked on Display Seats Fn
 	
 }
 
