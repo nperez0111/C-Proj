@@ -43,6 +43,8 @@ void confirm();
 //Created by Nick Perez
 
 void viewTicketSales(double prices[],bool seats[][cols]);
+
+
 /*
 goes through seats array and if it is true add its price by its row to an accumulator
 example pseudocode:
@@ -73,7 +75,8 @@ Created by Nick Perez
 
 
 int main(){
-	
+
+	//Functions Implemented by Nalin Suri
 	enterSeatPrices();
 	menu();
 	
@@ -182,5 +185,36 @@ void displaySeatPrices(double price[]) //Juan Herrera
 menu();
 }
 
+void viewTicketSales(double prices[],bool seats[][cols]){
+	displaySeats(seats);
+
+	double total=0.0;
+	
+	}
+	for(int r=0;r<rows;r++){
+		for(int c=0;c<cols;c++){
+		if(seats[r][c]){
+		total+=prices[r]
+		}
+	}
+ }
+ cout>>"Total Sales to Date: $"<<total<<endl;
+ 
+}
 
 
+
+void nalin(){
+	
+}
+void juan(){
+bool seats [row][cols];
+	for(int r=0;r<rows;r++){
+		for(int c=0;c<cols;c++){
+			seats[r][c]=(r%2==0);
+		}
+	}
+	double prices[15]={1,2,1,1,2,1,1,2,1,1,2,1,1,2,1}
+	viewTicketSales(double prices[],bool seats[][cols]);
+	
+}
