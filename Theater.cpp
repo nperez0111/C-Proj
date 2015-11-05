@@ -138,27 +138,20 @@ void displaySeats()
 {
 	cout << "\n\t\tSeats";
 	cout << "\n 123456789012345678901234567890" << endl;
-	//suggestion use a nested for loop to go through the array
-//	while(availableSeats[rows][cols])
-//	{
-//		if(availableSeats[rows][cols]==false)
-//		{
-//			
-//		}
-//		else
-//		{
-//			
-//		}
-//			
-//	}
 
-	for()
+	for(int count=0;count<rows; count++)
 	{
-		for()
+		cout<< "Row "<<setw(2) << count+1<<"\t";
+		
+		for(int count1=0; count1<cols; count1++)
 		{
-			if(seats[row][col])
+			if(availableSeats[rows][cols])
 			{
-			
+				cout<<"#";
+			}
+			else
+			{
+				cout<<"*";
 			}
 		}
 	}
