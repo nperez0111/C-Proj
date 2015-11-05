@@ -65,7 +65,7 @@ int main(){
 	
 	//menu();
 	juan();
-	nalin();
+	//nalin();
 	nick();
 	
 	system("PAUSE");
