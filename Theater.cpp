@@ -18,7 +18,7 @@ void menu();
 //menu caller function to display menu and selection
 //implemented by Juan Herrera
 
-void displaySeats(bool [][cols]);
+void displaySeats();
 //display Seats will display the seats the user has purchased or not passed a multi dimensional array where true means the seat is sold and false means the seat is available
 //Pseudocode by Nick Perez
 
@@ -131,6 +131,19 @@ void enterSeatPrices()
 		cout<< "Please enter ticket price for Row"<< setw(2) << count+1<< " ";
 		cin>> seatPrices[count];
 	}
+	
+}
+
+void displaySeats()
+{
+	cout << "\n\t\tSeats";
+	cout << "\n 123456789012345678901234567890" << endl;
+	//suggestion use a nested for loop to go through the array
+	//cout << "\n\n\n\tLegend:\t* = Sold";
+	// cout << "\n\t\t# = Available";
+	// cout << "\n\n\nPress the Enter key to continue.";
+	// cin.ignore();
+	// cin.get();
 	
 }
 
