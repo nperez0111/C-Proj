@@ -16,6 +16,7 @@ int main(){
 }
 
 
+
 //returns 0 if first char is not a number
 int toInt(string s){
 	return atoi(s.c_str());
