@@ -61,8 +61,10 @@ void nalin();
 
 int main(){
 	
+	//Functions Implemented by Nalin Suri
 	double seats[rows];
 	enterSeatPrices(seats);
+	menu();
 	
 	//menu();
 	juan();
@@ -152,7 +154,7 @@ void nalin(){
 	
 }
 void juan(){
-	double arr[15]={1,2,3,4,1,2,3,4,1,2,3,4,1,2,2};
+	double arr[15];
 
  displaySeatPrices(arr);	
 }
