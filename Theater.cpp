@@ -28,6 +28,25 @@ void confirm();
 //Pseudocode/Implementation by Nick Perez
 
 void viewTicketSales(double prices[],bool seats[][cols]);
+
+void viewTicketSales(double prices[],bool seats[][cols]){
+	dispalySeats(seats);
+
+
+	for(seats){
+		for(prices){
+		if(seats[row][col]==true){
+		total+=prices[row]
+		}
+	}
+}
+	
+	
+	
+	
+	
+	
+}
 /*
 goes through seats array and if it is true add its price by its row to an accumulator
 example pseudocode:
