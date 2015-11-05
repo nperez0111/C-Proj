@@ -186,19 +186,19 @@ menu();
 }
 
 void viewTicketSales(double prices[],bool seats[][cols]){
-	displaySeats(seats);
-
+	displaySeats();
+	int r;
 	double total=0.0;
 	
-	}
-	for(int r=0;r<rows;r++){
+	
+	for(r=0;r<rows;r++){
 		for(int c=0;c<cols;c++){
 		if(seats[r][c]){
-		total+=prices[r]
+		total+=prices[r];
 		}
 	}
  }
- cout>>"Total Sales to Date: $"<<total<<endl;
+ cout<<"Total Sales to Date: $"<<total<<endl;
  
 }
 
@@ -208,13 +208,17 @@ void nalin(){
 	
 }
 void juan(){
-bool seats [row][cols];
-	for(int r=0;r<rows;r++){
+		displaySeats();
+	int r;
+	double total=0.0;
+	
+	
+	for(r=0;r<rows;r++){
 		for(int c=0;c<cols;c++){
-			seats[r][c]=(r%2==0);
+		if(seats[r][c]){
+		total+=prices[r];
 		}
 	}
-	double prices[15]={1,2,1,1,2,1,1,2,1,1,2,1,1,2,1}
-	viewTicketSales(double prices[],bool seats[][cols]);
-	
+ }
+ cout<<"Total Sales to Date: $"<<total<<endl;
 }
