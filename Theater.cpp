@@ -165,7 +165,6 @@ void enterSeatPrices() //Nalin Suri
 
 void displaySeats(bool& flag) //Nalin Suri
 {
-	flag=true;
 	cout << "\n\t\tSeats";
 	cout << "\n\t123456789012345678901234567890" << endl;
 
