@@ -199,8 +199,7 @@ void displaySeatPrices(double price[]) //Juan Herrera
 	cout<<"\tRow\t"<<"Price \n";
 	cout<<"\t---\t"<<"---- \n";
 	for(int i=0;i<15;i++){
-	
-		cout<<"\t"<<i+1<<"\t"<<price[i]<<endl;
+	 cout << setw(8) << i+1 << setw(10) << price[i] << endl;
 	}
 	
 menu();
