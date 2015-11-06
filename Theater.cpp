@@ -199,7 +199,7 @@ void displaySeatPrices(double price[]) //Juan Herrera
 	cout<<"\tRow\t"<<"Price \n";
 	cout<<"\t---\t"<<"---- \n";
 	for(int i=0;i<15;i++){
-	 cout << setw(8) << i+1 << setw(10) << price[i] << endl;
+		 cout<<"\t"<<i+1<<"\t"<<price[i]<<endl;
 	}
 	
 menu();
@@ -217,7 +217,7 @@ void viewTicketSales(double prices[],bool seats[][cols]){
 		}
 	}
  }
- cout<<"\n\n\nTotal Sales to Date: $"<<total<<endl;
+ cout<<"\n\nTotal Sales to Date: $"<<total<<endl;
  
  menu();
 }
@@ -277,6 +277,7 @@ void purchaseTicket(bool (&seats)[rows][cols]) //Created by Nalin Suri
 	}
 	while (again=='Y'||again=='y');
 	
-	cout << "\n\nYou have purchased a total of " << numTickets << " tickets for a total price of $" << totPrice;
-
+	cout << "\n\nYou have purchased a total of " << numTickets << " tickets for a total price of $" << totPrice<<endl;
+	
+	menu();
 }
