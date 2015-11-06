@@ -206,7 +206,6 @@ menu();
 }
 
 void viewTicketSales(double prices[],bool seats[][cols]){
-	displaySeats();
 	int r;
 	double total=0.0;
 	
@@ -221,6 +220,7 @@ void viewTicketSales(double prices[],bool seats[][cols]){
  cout<<"Total Sales to Date: $"<<total<<endl;
  
 }
+<<<<<<< HEAD
 
 void purchaseTicket(bool (&seats)[rows][cols]) //Created by Nalin Suri
 {
@@ -281,3 +281,5 @@ void purchaseTicket(bool (&seats)[rows][cols]) //Created by Nalin Suri
 
 
 
+=======
+>>>>>>> origin/master
