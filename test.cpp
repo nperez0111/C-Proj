@@ -20,8 +20,8 @@ void juan(){
 		
 	int r;
 	double total=0.0;
-	double seats[][]={true, false, true,true, false, true,true, false, true,true, false, true,true, false, true};
-	double prices [15]={1,2,3,1,2,3,1,2,3,1,2,3,1,2,3};
+bool seats[rows][cols]={true, false, true,true, false, true,true, false, true,true, false, true,true, false, true};{true, false, true,true, false, true,true, false, true,true, false, true,true, false, true; };
+	double prices [15]={5,2,3,1,2,3,5,2,3,1,2,3,1,2,3};
 	
 	for(r=0;r<rows;r++){
 		for(int c=0;c<cols;c++){
