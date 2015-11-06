@@ -146,9 +146,10 @@ switch(choice){
 } while(booll);}
 
 void confirm(){
-	string nothing;
 	cout<<"Please enter to continue";
-	cin>>nothing;
+	cin.ignore();
+	cin.get();
+	menu();
 }
 
 
@@ -188,10 +189,7 @@ void displaySeats() //Nalin Suri
 	cout << "\n\t\t# = Available\n\n\n";
 	confirm();
 	
-	if(flag==true)
-	{
-		menu();
-	}
+	
 	
 }
 
