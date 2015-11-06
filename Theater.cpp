@@ -20,7 +20,7 @@ void menu();
 //menu caller function to display menu and selection
 //Created by Juan Herrera
 
-void displaySeats();
+void displaySeats(bool&);
 //display Seats will display the seats the user has purchased or not passed a multi dimensional array
 //where true means the seat is sold and false means the seat is available
 //	for(int count=0;count<rows; count++)
@@ -123,7 +123,7 @@ do{
 	booll=false;
 switch(choice){
 	case 1:
-	displaySeats();
+	displaySeats(flag);
 	break;
 	case 2:
 	displaySeatPrices(seatPrices);
@@ -163,9 +163,9 @@ void enterSeatPrices() //Nalin Suri
 	
 }
 
-void displaySeats() //Nalin Suri
+void displaySeats(bool& flag) //Nalin Suri
 {
-	bool flag=true;
+	flag=true;
 	cout << "\n\t\tSeats";
 	cout << "\n\t123456789012345678901234567890" << endl;
 
@@ -218,12 +218,12 @@ void viewTicketSales(double prices[],bool seats[][cols]){
 		}
 	}
  }
- cout<<"Total Sales to Date: $"<<total<<endl;
+ cout<<"\n\n\nTotal Sales to Date: $"<<total<<endl;
  
  menu();
 }
 
-void purchaseTicket(bool (&seats)[rows][cols], bool flag) //Created by Nalin Suri
+void purchaseTicket(bool (&seats)[rows][cols], bool& flag) //Created by Nalin Suri
 {
 	char choice=' ';
 	char again=' ';
@@ -241,7 +241,8 @@ void purchaseTicket(bool (&seats)[rows][cols], bool flag) //Created by Nalin Sur
 	if(choice=='Y'||choice=='y')
 	{
 		flag=false;
-		displaySeats();
+		displaySeats(flag);
+		flag=true;
 	}
 	
 	do
