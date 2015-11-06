@@ -168,13 +168,13 @@ void displaySeats() //Nalin Suri
 	cout << "\n\t\tSeats";
 	cout << "\n\t123456789012345678901234567890" << endl;
 
-	for(int count=0;count<rows; count++)
+	for(int r=0;r<rows; r++)
 	{
-		cout<< "\nRow "<<setw(2) << count+1<<"\t";
+		cout<< "\nRow "<<setw(2) << r+1<<"\t";
 		
-		for(int count1=0; count1<cols; count1++)
+		for(int c=0; c<cols; c++)
 		{
-			if(availableSeats[rows][cols]==false)
+			if(availableSeats[r][c]==false)
 			{
 				cout<<"#";
 			}
