@@ -20,7 +20,7 @@ void juan(){
 		
 	int r;
 	double total=0.0;
-	double seats[][]={1,2,3,1,2,3,1,2,3,1,2,3,1,2,3}{1,2,3,1,2,3,1,2,3,1,2,3,1,2,3};
+	double seats[][]={true, false, true,true, false, true,true, false, true,true, false, true,true, false, true};
 	double prices [15]={1,2,3,1,2,3,1,2,3,1,2,3,1,2,3};
 	
 	for(r=0;r<rows;r++){
