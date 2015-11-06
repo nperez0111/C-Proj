@@ -220,6 +220,7 @@ void viewTicketSales(double prices[],bool seats[][cols]){
  }
  cout<<"Total Sales to Date: $"<<total<<endl;
  
+ menu();
 }
 
 void purchaseTicket(bool (&seats)[rows][cols], bool flag) //Created by Nalin Suri
