@@ -220,7 +220,6 @@ void viewTicketSales(double prices[],bool seats[][cols]){
  cout<<"Total Sales to Date: $"<<total<<endl;
  
 }
-<<<<<<< HEAD
 
 void purchaseTicket(bool (&seats)[rows][cols]) //Created by Nalin Suri
 {
@@ -278,8 +277,3 @@ void purchaseTicket(bool (&seats)[rows][cols]) //Created by Nalin Suri
 	cout << "\n\nYou have purchased a total of " << numTickets << " tickets for a total price of $" << totPrice;
 
 }
-
-
-
-=======
->>>>>>> origin/master
