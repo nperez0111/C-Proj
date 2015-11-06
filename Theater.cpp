@@ -186,7 +186,6 @@ menu();
 }
 
 void viewTicketSales(double prices[],bool seats[][cols]){
-	displaySeats();
 	int r;
 	double total=0.0;
 	
@@ -200,25 +199,4 @@ void viewTicketSales(double prices[],bool seats[][cols]){
  }
  cout<<"Total Sales to Date: $"<<total<<endl;
  
-}
-
-
-
-void nalin(){
-	
-}
-void juan(){
-		displaySeats();
-	int r;
-	double total=0.0;
-	
-	
-	for(r=0;r<rows;r++){
-		for(int c=0;c<cols;c++){
-		if(seats[r][c]){
-		total+=prices[r];
-		}
-	}
- }
- cout<<"Total Sales to Date: $"<<total<<endl;
 }
