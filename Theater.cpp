@@ -59,7 +59,7 @@ after call the main function immediately
 Created by Nick Perez
 */
 
-void purchaseTicket(bool (&seats)[rows][cols]);
+void purchaseTicket(bool (&seats)[rows][cols], bool);
 /*asks user whether to view available seats or not 
 if(y){displaySeats();confirm();} 
 do{
@@ -107,6 +107,7 @@ int main(){
 
 void menu() //Juan Herrera
 {
+bool flag =true;
 int choice;
 cout << "\n\n\n\t\tC++ Theatre" << endl << endl;
 cout << "\n\t1. View Available Seats";
@@ -125,16 +126,13 @@ switch(choice){
 	displaySeats();
 	break;
 	case 2:
-	{
-		displaySeatPrices(seatPrices);
-		menu();
-	}
+	displaySeatPrices(seatPrices);
 	break;
 	case 3:
 	viewTicketSales(seatPrices, availableSeats);
 	break;
 	case 4:
-	purchaseTicket(availableSeats);
+	purchaseTicket(availableSeats, flag);
 	break;
 	case 5:
 	return;
@@ -146,6 +144,7 @@ switch(choice){
 	break;
 			}
 } while(booll);}
+
 void confirm(){
 	string nothing;
 	cout<<"Please enter to continue";
@@ -165,6 +164,7 @@ void enterSeatPrices() //Nalin Suri
 
 void displaySeats() //Nalin Suri
 {
+	bool flag=true;
 	cout << "\n\t\tSeats";
 	cout << "\n\t123456789012345678901234567890" << endl;
 
@@ -185,10 +185,13 @@ void displaySeats() //Nalin Suri
 		}
 	}
 	cout << "\n\n\n\tLegend:\t* = Sold";
-	cout << "\n\t\t# = Available";
-	cout << "\n\n\nPress the Enter key to continue.";
-	cin.ignore();
-	cin.get();
+	cout << "\n\t\t# = Available\n\n\n";
+	confirm();
+	
+	if(flag==true)
+	{
+		menu();
+	}
 	
 }
 
@@ -221,7 +224,7 @@ void viewTicketSales(double prices[],bool seats[][cols]){
  
 }
 
-void purchaseTicket(bool (&seats)[rows][cols]) //Created by Nalin Suri
+void purchaseTicket(bool (&seats)[rows][cols], bool flag) //Created by Nalin Suri
 {
 	char choice=' ';
 	char again=' ';
@@ -238,6 +241,7 @@ void purchaseTicket(bool (&seats)[rows][cols]) //Created by Nalin Suri
 	
 	if(choice=='Y'||choice=='y')
 	{
+		flag=false;
 		displaySeats();
 	}
 	
