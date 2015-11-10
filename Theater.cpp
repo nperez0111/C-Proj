@@ -70,7 +70,6 @@ flag=false;
 	ask user if they'd like to purchase another seat
 	if(y){flag=true;} 
 }while(flag);
-
 //use a do loop with a nested while
 //within nested loop you'll need another decision to check to see of seat is available
 //cout << "\nPlease enter desired row number (1-" << ROWS << "): ";
@@ -114,7 +113,7 @@ cout << "\n\t2. View Seating Prices";
 cout << "\n\t3. View Ticket Sales";
 cout << "\n\t4. Purchase a Ticket";
 cout << "\n\t5. Exit the Program\n\n";
-cout << "\n\tEnter your choice(1-5): ";
+cout << "\n\tEnter your choice(1-5):  ";
 cin>>choice;
 bool booll;
 
@@ -145,7 +144,7 @@ switch(choice){
 } while(booll);}
 
 void confirm(bool menuOrNah){
-	cout<<"Please enter to continue";
+	cout<<"Press the Enter key to continue.";
 	cin.ignore();
 	cin.get();
 	if(menuOrNah){
@@ -201,10 +200,9 @@ void displaySeatPrices(double price[]) //Juan Herrera
 	for(int i=0;i<15;i++){
 		 cout<<fixed<<setw(7)<<right<<i+1<<fixed<<setw(10)<<setprecision(2)<<price[i]<<endl;
 	}
-	
-menu();
+	cout<< endl<<endl<<endl;
+confirm(true);
 }
-
 
 void viewTicketSales(double prices[],bool seats[][cols]){
 	int r;
@@ -218,7 +216,7 @@ void viewTicketSales(double prices[],bool seats[][cols]){
 		}
 	}
  }
- cout<<"\n\nTotal Sales to Date: $"<<total<<endl;
+ cout<<"\n\nTotal Sales to Date:  $"<<fixed<< setprecision(2)<<total<<endl;
  
  menu();
 }
@@ -274,11 +272,12 @@ void purchaseTicket(bool (&seats)[rows][cols]) //Created by Nalin Suri
 			cout << "\nSorry. That seat has been sold.\n";	
 		}
 		cout << "\nWould you like to purchase another seat (y/n)? ";
+		cin>> again;
 		
 	}
 	while (again=='Y'||again=='y');
 	
-	cout << "\n\nYou have purchased a total of " << numTickets << " tickets for a total price of $" << totPrice<<endl;
+	cout << "\n\nYou have purchased a total of " << numTickets << " tickets for a total price of $" << fixed<<setprecision(2)<<totPrice<<endl;
 	
 	menu();
-} 
+}
