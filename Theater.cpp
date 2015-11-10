@@ -281,4 +281,4 @@ void purchaseTicket(bool (&seats)[rows][cols]) //Created by Nalin Suri
 	cout << "\n\nYou have purchased a total of " << numTickets << " tickets for a total price of $" << totPrice<<endl;
 	
 	menu();
-}
+} 
