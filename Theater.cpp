@@ -158,7 +158,7 @@ void enterSeatPrices() //Nalin Suri
 {
 	for (int count=0;count<rows; count++)
 	{
-		cout<< "Please enter ticket price for Row "<< setw(2) << count+1<< " ";
+		cout<< "Please enter ticket price for Row "<< setw(2) << count+1<< ": ";
 		cin>> seatPrices[count];
 	}
 	
