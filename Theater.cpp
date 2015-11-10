@@ -196,14 +196,15 @@ void displaySeats(bool flag) //Nalin Suri
 void displaySeatPrices(double price[]) //Juan Herrera
 {
 	cout<<"\nTicket Prices by Row \n\n";
-	cout<<"\tRow\t"<<"Price \n";
-	cout<<"\t---\t"<<"---- \n";
+	cout<<setw(8)<<"Row"<<setw(10)<<"Price\n";
+	cout<<setw(8)<<"---"<<setw(10)<<"-----\n";
 	for(int i=0;i<15;i++){
-		 cout<<"\t"<<i+1<<"\t"<<price[i]<<endl;
+		 cout<<fixed<<setw(7)<<right<<i+1<<fixed<<setw(10)<<setprecision(2)<<price[i]<<endl;
 	}
 	
 menu();
 }
+
 
 void viewTicketSales(double prices[],bool seats[][cols]){
 	int r;
