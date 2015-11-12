@@ -243,21 +243,19 @@ void purchaseTicket(bool (&seats)[rows][cols]) //Created by Nalin Suri
 		
 	}
 	
-	do
-	{
+	do{
+		
 		cout << "\nPlease enter desired row number (1-" << rows << "): ";
 		cin>>rowChoice;
-		if(rowChoice<=1 && rowChoice>=15)
-		{
+		while(rowChoice<1||rowChoice>rows){
 			cout << "Row must be between 1 and " << rows << ". Please re-enter: ";
 			cin>>rowChoice;
 		}
 		cout << "\nPlease enter desired seat number (1-" << cols << "): ";
 		cin>>colChoice;
-		if(colChoice<=1&&colChoice>=30)
-		{
-			cout << "Seat must be between 1 and " << cols << ". Please re-enter: ";
-			cin>>rowChoice;
+		while(colChoice<1||colChoice>cols){
+			cout << "Row must be between 1 and " << cols << ". Please re-enter: ";
+			cin>>colChoice;
 		}
 		if (availableSeats[rowChoice-1][colChoice-1]==false)
 		{
